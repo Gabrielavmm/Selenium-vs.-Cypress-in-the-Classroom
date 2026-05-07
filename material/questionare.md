@@ -23,9 +23,6 @@ Paste repository link or file reference here
  Yes
  No
 5. If you used a capture-and-replay tool for Cypress, was it necessary to fix or modify the generated test cases?
-
-(Ignoring the addition of assertions.)
-
  Yes
  No
  Not applicable
@@ -33,26 +30,15 @@ Paste repository link or file reference here
  Yes
  No
 7. If you used a capture-and-replay tool for Selenium, was it necessary to fix or modify the generated test cases?
-
-(Ignoring the addition of assertions.)
-
  Yes
  No
  Not applicable
 8. During the development of the Cypress test cases, were you impacted by this challenge?
  Yes
  No
-
-If yes, briefly explain:
-
-Your answer here
 9. During the development of the Selenium test cases, were you impacted by this challenge?
  Yes
  No
-
-If yes, briefly explain:
-
-Your answer here
 10. We'd like to hear your opinion.
 
 Please share your experience using Cypress and Selenium.
