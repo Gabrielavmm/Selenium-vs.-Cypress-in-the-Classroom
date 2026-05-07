@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Cypress vs Selenium – Feedback Questionnaire
 
 Please answer the questions below based on your team's experience during the activity.
@@ -92,10 +93,74 @@ Paste repository link or file reference here
 ## 10. We'd like to hear your opinion.
 
 Please share your experience using Cypress and Selenium.  
+=======
+Cypress vs Selenium – Feedback Questionnaire
+
+Please answer the questions below based on your team's experience during the activity.
+
+Team Information
+Team Member 1
+Name:
+Email:
+Team Member 2
+Name:
+Email:
+Questionnaire
+1. Which administrative section were you assigned to?
+
+2. Attach or provide the link to the compressed starter kit repository containing your test implementation and configurations.
+Answer:
+
+Paste repository link or file reference here
+3. In your opinion, which framework was easier to use for implementing the test cases?
+ Cypress
+ Selenium
+4. Did you use a capture-and-replay tool (such as Cypress Scenario Recorder) to generate the Cypress test cases?
+ Yes
+ No
+5. If you used a capture-and-replay tool for Cypress, was it necessary to fix or modify the generated test cases?
+
+(Ignoring the addition of assertions.)
+
+ Yes
+ No
+ Not applicable
+6. Did you use a capture-and-replay tool (such as Selenium IDE) to generate the Selenium test cases?
+ Yes
+ No
+7. If you used a capture-and-replay tool for Selenium, was it necessary to fix or modify the generated test cases?
+
+(Ignoring the addition of assertions.)
+
+ Yes
+ No
+ Not applicable
+8. During the development of the Cypress test cases, were you impacted by this challenge?
+ Yes
+ No
+
+If yes, briefly explain:
+
+Your answer here
+9. During the development of the Selenium test cases, were you impacted by this challenge?
+ Yes
+ No
+
+If yes, briefly explain:
+
+Your answer here
+10. We'd like to hear your opinion.
+
+Please share your experience using Cypress and Selenium.
+>>>>>>> 5154717 (feat. questionare)
 What differences between the frameworks impacted you positively or negatively?
 
 Answer:
 
+<<<<<<< HEAD
 ```text
 Write your feedback here
 ```
+=======
+Write your feedback here
+>>>>>>> 5154717 (feat. questionare)

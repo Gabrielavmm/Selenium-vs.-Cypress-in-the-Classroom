@@ -58,7 +58,10 @@ The study spans **five semesters** and involves **98 student pairs**, who develo
 ```
 
 ---
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5154717 (feat. questionare)
 ## Study Design
 
 | Item | Description |
@@ -71,8 +74,11 @@ The study spans **five semesters** and involves **98 student pairs**, who develo
 | Analysis | AST-based static analysis + ESLint + content analysis of open-ended responses |
 
 Each pair developed two test suites — one in Cypress, one in Selenium — targeting a specific Sylius feature. Minimum requirements: ≥ 10 test cases per suite, ≥ 4 GUI interactions per test case, ≥ 1 assertion per test case.
+<<<<<<< HEAD
 
 To ensure a consistent execution environment, students received a **starter kit** containing a preconfigured Docker container for the Sylius application, along with one reference test case per framework (Cypress and Selenium) corresponding to their assigned section of the administrative panel. These reference test cases were provided as examples and are included in each pair's submission.
+=======
+>>>>>>> 5154717 (feat. questionare)
 
 ---
 
@@ -101,7 +107,11 @@ One row per pair per framework. Columns:
 | `semester` | S1–S5 |
 | `pair_id` | Anonymized pair identifier |
 | `framework` | `cypress` or `selenium` |
+<<<<<<< HEAD
 | `test_case_count` | Number of test cases (starter kit reference test excluded) |
+=======
+| `test_case_count` | Number of test cases (starter kit excluded) |
+>>>>>>> 5154717 (feat. questionare)
 | `assertion_conformity` | % of test cases with ≥ 1 assertion |
 | `interaction_conformity` | % of test cases with ≥ 4 interactions |
 | `avg_assertions` | Average assertions per test case |
@@ -122,8 +132,11 @@ One row per pair per framework. Columns:
 ### `data/questionnaire-responses.csv`
 
 One row per pair. Columns: `semester`, `pair_id`, `preferred_framework`, `used_capture_replay_cypress`, `corrected_cypress`, `used_capture_replay_selenium`, `corrected_selenium`, `sync_issues_cypress`, `sync_issues_selenium`, `open_response`.
+<<<<<<< HEAD
 
 > **Note:** Open-ended responses are in Portuguese.
+=======
+>>>>>>> 5154717 (feat. questionare)
 
 ---
 
@@ -135,4 +148,8 @@ Data was collected as part of regular course activities and anonymized prior to 
 
 ## License
 
+<<<<<<< HEAD
 MIT License
+=======
+MIT License
+>>>>>>> 5154717 (feat. questionare)
