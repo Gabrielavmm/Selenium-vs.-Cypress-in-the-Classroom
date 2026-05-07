@@ -24,7 +24,7 @@ Repository Structure
 │
 ├── materials/
 │   ├── activity.pdf             # Assignment given to student pairs
-│   └── questionnaire.pdf        # Perception questionnaire (closed + open-ended questions)
+│   └── questionnaire.md        # Perception questionnaire (closed + open-ended questions)
 │
 ├── scripts/
 │   ├── ast-analysis/            # Custom AST-based parser for conformance, fragility, and hard-coded smells
