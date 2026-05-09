@@ -79,14 +79,13 @@ The study spans **five semesters** and involves **98 student pairs**, who develo
 | Analysis | AST-based static analysis + ESLint + content analysis of open-ended responses |
 
 Each pair developed two test suites — one in Cypress, one in Selenium — targeting a specific Sylius feature. Minimum requirements: ≥ 10 test cases per suite, ≥ 4 GUI interactions per test case, ≥ 1 assertion per test case.
-<<<<<<< HEAD
+
 
 To ensure a consistent execution environment, students received a **starter kit** containing a preconfigured Docker container for the Sylius application, along with one reference test case per framework (Cypress and Selenium) corresponding to their assigned section of the administrative panel. These reference test cases were provided as examples and are included in each pair's submission.
 =======
->>>>>>> 5154717 (feat. questionare)
+
 
 ---
-
 ## Analysis Pipeline
 
 Two complementary tools were used to extract metrics from the test suites:
@@ -98,6 +97,11 @@ Parses each test file into an Abstract Syntax Tree to extract: `test_case_count`
 Detects the following test smells: `eslint_cy_wait_fixo`, `eslint_unsafe_chain`, `eslint_await_loop`, `eslint_no_only_test`, `eslint_no_unused_var`, `max_lines_per_function`, `max_statements`.
 
 See each script's `README.md` for setup and usage instructions.
+
+**3. Statistical analysis** (`scripts/statistical-analysis/`)  
+Applies the Wilcoxon Signed-Rank test to validate differences in
+`fragile_locator_rate` between frameworks, reported with effect
+size r overall and per semester.
 
 ---
 
