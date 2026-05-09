@@ -26,7 +26,7 @@ The study spans **five semesters** and involves **98 student pairs**, who develo
 ├── materials/
 │   ├── activity.pdf            # Assignment given to student pairs
 │   └── questionnaire.md        # Perception questionnaire (closed + open-ended questions - In portuguese)
-|   └── startet-kit             # Starter kit provided
+|   └── startetkit.zip          # Starter kit provided
 
 │
 ├── scripts/
