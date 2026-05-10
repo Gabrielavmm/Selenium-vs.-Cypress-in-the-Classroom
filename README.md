@@ -111,7 +111,7 @@ Detects test smells such as:
 ---
 
 ### 3. Statistical analysis (`scripts/statistical-analysis/`)
-Applies the Wilcoxon Signed-Rank test to validate differences in `fragile_locator_rate` between frameworks, reporting effect size r overall and per semester.
+Applies the Wilcoxon Signed-Rank test to validate differences between Cypress and Selenium across all metric groups: Group 1 (test_case_count, assertion_conformity, interaction_conformity), Group 2 (fragile_locator_rate, avg_assertions), and Group 3 (test smells). Reports W statistic, p-value, and rank-biserial effect size r overall and per semester.
 
 ---
 
