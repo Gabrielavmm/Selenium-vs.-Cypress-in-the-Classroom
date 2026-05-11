@@ -9,8 +9,8 @@ Group 3: unsafe_chain, max_lines_per_function, unused_var, hard_coded,
 import pandas as pd
 import numpy as np
 from scipy import stats
-import warnings
 from pathlib import Path
+import warnings
 warnings.filterwarnings('ignore')
 
 # ── Helpers ────────────────────────────────────────────────────────────────
@@ -68,8 +68,6 @@ def wilcoxon_per_sem(pairs, col_cy, col_sel):
 
 # ── Data Loading ───────────────────────────────────────────────────────────
 
-from pathlib import Path
-
 BASE_DIR = Path(__file__).resolve().parents[2]
 
 files = {
@@ -110,15 +108,21 @@ for sem, path in files.items():
     df = df[df['tool_norm'].notna()].copy()
     linhas_col = 'linhas' if 'linhas' in df.columns else 'Linhas'
     df['lines']                  = pd.to_numeric(df[linhas_col], errors='coerce')
+    df['total_locators']         = pd.to_numeric(df['total_locators'], errors='coerce')
     df['fragile_locator_rate']   = df['fragile_locator_rate'].apply(parse_pct)
     df['assertion_conformity']   = df['assertion_conformity'].apply(parse_pct)
     df['interaction_conformity'] = df['interaction_conformity'].apply(parse_pct)
+
+    # FLR = 0% when total_locators is known but FLR is missing (no fragile locators)
+    df.loc[df['fragile_locator_rate'].isna() & df['total_locators'].notna(),
+           'fragile_locator_rate'] = 0.0
+
     for c in num_cols:
         if c not in df.columns: df[c] = np.nan
         df[c] = df[c].apply(parse_num)
     df['semester'] = sem
 
-    keep = ['ID da Dupla', 'semester', 'tool_norm', 'lines',
+    keep = ['ID da Dupla', 'semester', 'tool_norm', 'lines', 'total_locators',
             'fragile_locator_rate', 'assertion_conformity', 'interaction_conformity'] + num_cols
     records.append(df[keep])
 
@@ -130,6 +134,9 @@ cy  = all_data[all_data['tool_norm'] == 'Cypress']
 sel = all_data[all_data['tool_norm'] == 'Selenium']
 
 def flr_wmean(g):
+    # pairs with all locators=0 get FLR=0
+    if (g['total_locators'] == 0).all():
+        return 0.0
     v = g[g['fragile_locator_rate'].notna() & g['lines'].notna() & (g['lines'] > 0)]
     return np.average(v['fragile_locator_rate'], weights=v['lines']) if len(v) > 0 else np.nan
 
