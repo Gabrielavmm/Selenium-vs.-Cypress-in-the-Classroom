@@ -1,6 +1,5 @@
 # Selenium vs. Cypress in the Classroom: An Empirical Study of Teaching GUI Testing
 
-> Replication package for the paper submitted to the **Education Track of the XXXIX Brazilian Symposium on Software Engineering (SBES 2026)**.
 
 ---
 
